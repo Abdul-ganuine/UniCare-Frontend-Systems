@@ -1,0 +1,23 @@
+.profile {
+  width: 100%;
+  background-color: #eff2f7;
+}
+.profilePageContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profManagement {
+  height: 400px;
+}
+
+.proBox {
+  width: 200px;
+  height: 100px;
+  background-color: green;
+  margin-block: 20px;
+}

@@ -1,0 +1,113 @@
+/* Define the glow animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    background-color: rgb(180, 178, 178);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    background-color: rgb(118, 113, 126);
+    color: white;
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    background-color: rgb(180, 178, 178);
+  }
+}
+
+/* Style for the icons */
+.vid-icon,
+.smile,
+.text-icons > * {
+  border-radius: 50%;
+  padding-inline: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Apply glow effect on hover */
+.vid-icon:hover,
+.smile:hover,
+.text-icons > *:hover {
+  animation: glow 1s infinite;
+  transform: scale(1.1);
+}
+
+/* the main message room  */
+
+.main-message-room {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 120px);
+  background: var(--search_bar_color);
+  margin-right: 50px;
+}
+
+.message-body {
+  overflow: scroll;
+  height: calc(100vh - 120px);
+}
+
+.message-body::-webkit-scrollbar {
+  display: none;
+}
+
+.keyboard-form {
+  display: flex;
+}
+
+.typeside-icon {
+  display: flex;
+  gap: 15px;
+}
+
+.typeside-icon textarea {
+  background: transparent;
+  color: rgb(82, 79, 79);
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+  outline: none;
+  font-size: 1.1rem;
+  width: 350px;
+  height: 45px;
+}
+
+.typeside-icon-first {
+  display: flex;
+  gap: 10px;
+  color: rgb(75, 73, 73);
+  margin-top: 10px;
+}
+.text-icons {
+  margin-top: 10px;
+}
+
+/* mobile view */
+
+@media (max-width: 767px) {
+  .message-body {
+    width: 108%;
+    padding-right: 35px;
+  }
+
+  .text-icons {
+    margin-left: -50px;
+    gap: 5px;
+  }
+
+  .typeside-icon textarea {
+    width: 180px;
+  }
+
+  .keyboard-form {
+    margin-left: -10px;
+  }
+}
+
+/* end mobile view */
+
+/* tab view */
+@media (max-width: 1023px) {
+}
+/* end of tab view */

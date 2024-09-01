@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+input {
+  padding: 10px;
+}
+.date-picker {
+  width: 100%;
+}
+
+/* mobile view */
+@media (max-width: 767px) {
+  .form {
+    margin-left: -5px;
+  }
+}
+/* end mobile view */

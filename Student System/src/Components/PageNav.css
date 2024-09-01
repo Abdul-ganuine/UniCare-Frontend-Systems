@@ -1,0 +1,19 @@
+.pagenav {
+  height: 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 35px;
+  background-color: white;
+}
+
+.profileContainer {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.profileContainer img {
+  width: 100%;
+  height: 100%;
+}

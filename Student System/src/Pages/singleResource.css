@@ -1,0 +1,113 @@
+.single-resource-all {
+  padding-inline: 10rem;
+}
+
+.resource-content {
+  margin-top: 100px;
+  padding: 40px;
+  align-self: center;
+}
+
+.resource-text {
+  margin-block: 20px;
+}
+
+.file-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.single-Resource-prof {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+  margin-bottom: 10px;
+}
+
+.single-Resource-prof-leftside {
+  display: flex;
+}
+
+.comment-section {
+  padding-inline: 1rem;
+}
+.comment-input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: 10px;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 10px;
+
+  p {
+    padding: 10px;
+    font-weight: bold;
+  }
+}
+.comment-input-box textarea {
+  width: 92%;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  background-color: aliceblue;
+  box-shadow: var(--input-field-box-shadow);
+}
+
+.comments-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-top: 0.1px solid rgb(180, 179, 179);
+  padding: 20px;
+}
+
+.react-buttons {
+  display: flex;
+  gap: 50px;
+  margin-inline: 25px;
+  margin-block: 10px;
+  color: rgb(142, 140, 140);
+}
+
+.up-reactions {
+  display: flex;
+  gap: 10px;
+}
+
+.download-btn {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  width: 160px;
+  height: 40px;
+  padding: 10px;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+/* mobile view */
+@media (max-width: 767px) {
+  .comment-input-box input {
+    width: 94%;
+  }
+  .resource-content {
+    padding: 20px;
+  }
+}
+/* end mobile view */
+
+/* tab view */
+@media (max-width: 1023px) {
+  .single-resource-all {
+    padding-inline: 1rem;
+  }
+  .comment-section {
+    padding-inline: 0;
+  }
+  .comment-texts {
+    width: 100%;
+    padding-inline: 0;
+  }
+}
+/* end tab view */

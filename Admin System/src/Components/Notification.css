@@ -1,0 +1,33 @@
+.notification-container {
+  width: 76%;
+  margin: auto;
+  height: 80vh;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid rgb(126, 126, 126);
+  overflow: auto;
+}
+.mark-container {
+  display: flex;
+  flex-direction: column;
+}
+.mark {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.mark p {
+  text-decoration: underline;
+}
+.notifications-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.notification {
+  width: 94%;
+  margin: 0 auto;
+  padding: 4px;
+  border: 1px solid grey;
+  background-color: white;
+}

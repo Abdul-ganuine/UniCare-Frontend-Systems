@@ -1,0 +1,16 @@
+.dashboard {
+  width: 76%;
+  margin: 0 auto;
+  min-height: 89vh;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.count-container {
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5%;
+  padding: 10px 0;
+  border: 1px solid #f2f2f2;
+}

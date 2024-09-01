@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* desktop view */
+
+/* main page container */
+.register-page {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 30px;
+  margin-block: 30px;
+}
+.care {
+  color: green;
+}
+
+.bolded-text {
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 13px;
+}
+
+.title-name {
+  font-size: 0.7rem;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* the container hosting the image background and the forms section */
+.content-body {
+  display: flex;
+  padding: 20px;
+  background: rgb(221, 230, 247);
+  height: 75vh;
+}
+
+.img-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(14, 86, 25, 0.4), rgba(11, 19, 11, 0.8)),
+    url("./image/main-gate.jpeg") center no-repeat;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.img-welcome-txt {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.status-decider-times {
+  align-self: flex-end;
+  margin-right: 30px;
+  color: grey;
+  cursor: pointer;
+}
+.img-sign-txt {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  padding-top: 20px;
+  color: white;
+}
+
+.forms-content {
+  width: 100%;
+  padding-top: 30px;
+  background: rgb(252, 253, 254);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.forms-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-btn {
+  display: flex;
+}
+
+.inputs-1 {
+  margin-left: 20px;
+}
+
+.inputs-2 {
+  margin-left: 20px;
+}
+
+.inputs-3 {
+  margin-left: 25px;
+}
+
+.inputs-4 {
+  margin-left: 55px;
+}
+
+.btn-first {
+  width: 250px;
+  height: 30px;
+  background-color: green;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 100px;
+}
+
+.btn-first:hover {
+  background-color: rgb(25, 160, 25);
+}
+
+.clipLoader {
+  align-self: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  cursor: none;
+}
+.btn-2 {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.inputs {
+  width: 250px;
+  height: 35px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(249, 247, 247);
+  box-shadow: 0.1px 0.1px 1px rgb(171, 167, 167);
+}
+
+label {
+  padding-bottom: -10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.status {
+  display: flex;
+  gap: 30px;
+  /* margin-inline: 5px; */
+}
+
+.status-main {
+  width: 220px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  .status-txt {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+  }
+}
+
+.status-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.status-sub-txt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.status-btn {
+  width: 220px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.status-btn:hover {
+  background-color: rgb(49, 189, 49);
+}
+
+.footer {
+  margin-top: 60px;
+  background: green;
+}
+.footer p {
+  text-align: center;
+  padding-inline: 30px;
+  padding-block: 10px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* end of desktop view */
+
+/* mobile view */
+
+@media (max-width: 767px) {
+  .content-body {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .title {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .forms-content {
+    margin-top: 30px;
+    border-radius: 15px;
+    padding-block: 20px;
+  }
+
+  form {
+    margin-left: 75px;
+  }
+  .input-btn {
+    flex-direction: column;
+    margin-left: -84px;
+  }
+
+  .img-content {
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  .inputs-1,
+  .inputs-2,
+  .inputs-3,
+  .inputs-4 {
+    margin-left: 0;
+  }
+
+  .btn-first,
+  .btn-2 {
+    margin-left: -80px;
+  }
+
+  .clipLoader {
+    margin-left: -80px;
+  }
+  label {
+    padding-bottom: 10px;
+  }
+}
+/* mobile view */
+
+/* tablet view */
+
+@media (max-width: 1023px) {
+  .status {
+    flex-direction: column;
+    gap: 70px;
+  }
+}
+/* end of tablet view */

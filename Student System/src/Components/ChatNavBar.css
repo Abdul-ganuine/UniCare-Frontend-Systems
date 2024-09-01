@@ -1,0 +1,79 @@
+/* chat menu bar */
+.chat-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  border-bottom: 1px solid rgb(206, 202, 202);
+
+  box-shadow: var(--input-field-box-shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+.prof-logout {
+  display: flex;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-inline: 20px;
+}
+
+.lib-side-prof {
+  width: 70px;
+  margin-left: 20px;
+}
+
+.exit-arrow {
+  margin: 20px 20px 0 0;
+}
+
+.logout-btn {
+  background: green;
+
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+/* end of chat menu bar */
+
+/* mobile view design */
+@media (max-width: 767px) {
+  .chat-log {
+    position: absolute;
+    inset: 95% 0 0 0%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .library-menu-1 {
+    display: none;
+  }
+}
+
+/* end of mobile view designs */
+
+/* tab view */
+@media (min-width: 768px) {
+  .library-menu-1 {
+    margin-right: 70px;
+  }
+}
+
+/* end of tab view */

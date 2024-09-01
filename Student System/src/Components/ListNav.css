@@ -1,0 +1,203 @@
+.listnav {
+  margin: 3rem 8rem 2rem 8rem;
+  position: relative;
+  background-color: white;
+  box-shadow: var(--input-field-box-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.greenNav {
+  width: 800px;
+  margin: 3rem 10rem 2rem 10rem;
+
+  background-color: white;
+  box-shadow: var(--input-field-box-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.backbtn {
+  position: absolute;
+  right: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.backbtn:hover {
+  color: green;
+}
+.listnav-header {
+  padding: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  color: rgb(66, 65, 65);
+  text-align: center;
+}
+.greenNav .altBtns {
+  display: flex;
+  background-color: green;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.greenNav .visited {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(34, 34, 34);
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.greenNav .unvisited {
+  background-color: transparent;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: var(--input-field-box-shadow);
+  font-weight: 540;
+  color: black;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.professionalsList {
+  padding: 20px;
+  background-color: green;
+}
+
+.usersCustomized {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 30vh;
+  overflow-y: auto;
+  position: relative;
+}
+.usersCustomized-singles {
+  display: flex;
+  color: white;
+  cursor: pointer;
+}
+
+.usersCustomized-singles:hover {
+  background-color: white;
+  color: black;
+  padding-inline: -30px;
+}
+
+.usersCustomized-name {
+  padding-top: 7px;
+  font-size: 1.2rem;
+}
+
+.prof-details {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.prof-detailed-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prof-detailed-info-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.prof-detailed-info-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.prof-detailed-info-name {
+  height: 40px;
+  background-color: green;
+  padding: 10px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  box-shadow: var(--input-field-box-shadow);
+  margin-bottom: 10px;
+}
+
+.prof-detailed-info-txt {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.spec {
+  font-size: 0.9rem;
+  color: rgb(131, 129, 129);
+}
+
+.appointment-list {
+  margin: 3rem 20rem 2rem 10rem;
+}
+.appointments {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(77, 75, 75);
+  margin: 20px 0;
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+.app-details-heading {
+  display: flex;
+}
+
+.app-status {
+  display: flex;
+  gap: 5px;
+}
+
+/* mobile view design */
+
+@media (max-width: 767px) {
+}
+/* end mobile view design */
+
+@media (max-width: 1023px) {
+  .prof-details {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .prof-detailed-info {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(174, 171, 171);
+  }
+
+  .listnav,
+  .greenNav,
+  .appointment-list {
+    margin: 2rem 1rem;
+  }
+
+  .greenNav {
+    width: auto;
+  }
+}

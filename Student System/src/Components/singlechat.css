@@ -1,0 +1,31 @@
+/* singlechat.css */
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.text-Box {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 50vh;
+  word-wrap: break-word;
+}
+
+.text-Box1 {
+  background-color: rgb(213, 214, 215);
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 50vh;
+  word-wrap: break-word;
+}
+
+.chat-time {
+  font-size: 12px;
+  background-color: var(--search_bar_color);
+  color: #999;
+  margin-top: 5px;
+}

@@ -1,0 +1,13 @@
+.image-class {
+  padding: 10rem;
+  width: 90%;
+}
+
+/* mobile view */
+@media (max-width: 1023px) {
+  .image-class {
+    padding: 2rem;
+    width: 100%;
+  }
+}
+/* end of mobile view */

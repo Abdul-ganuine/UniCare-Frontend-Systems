@@ -1,0 +1,77 @@
+.modal-container {
+  width: 76%;
+  margin: 0 auto;
+  max-height: 85vh;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  overflow: auto;
+}
+/* .modal-back {
+  align-self: flex-end;
+  width: 90%;
+  padding: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+} */
+.modal-edit-form-inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+.modal-add-input {
+  width: 46%;
+  padding: 10px;
+  display: flex;
+}
+.timing,
+.modal-add-input input {
+  padding: 6px;
+  width: 60%;
+  border: 1px solid black;
+}
+.modal-add-input select {
+  padding: 10px;
+  width: 60%;
+}
+.modal-add-input label {
+  width: 110px;
+}
+.modal-addBtn {
+  width: 120px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+@media (max-width: 900px) {
+  .modal-container {
+    width: 90%;
+  }
+  .modal-edit-form {
+    height: 90%;
+    margin: auto;
+  }
+  .modal-edit-form-inputs {
+    flex-direction: column;
+  }
+  .modal-add-input {
+    width: 100%;
+  }
+}

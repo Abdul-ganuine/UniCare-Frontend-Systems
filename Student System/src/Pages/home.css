@@ -1,0 +1,692 @@
+:root {
+  --input-field-box-shadow: 0.1px 0.1px 5px rgb(86, 85, 85);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* menu bar display */
+.menu-updated {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  box-shadow: 0.4px 0.3px 7px rgb(103, 105, 105);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.menu-logo {
+  width: 60px;
+}
+
+.menu-logo img {
+  width: 100%;
+}
+
+.menu-list {
+  display: flex;
+  gap: 50px;
+}
+
+.list-items {
+  display: flex;
+  gap: 20px;
+}
+
+.items {
+  list-style-type: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+}
+
+.items:hover,
+.home-active {
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+}
+
+.itms {
+  color: black;
+}
+.itms-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+.profile img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+/* end menu bar display */
+
+/* main homepage content */
+.main-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: 100px;
+}
+
+.main-page-sub {
+  background: linear-gradient(
+      to right,
+      rgba(8, 59, 16, 0.986),
+      rgba(12, 13, 12, 0.2)
+    ),
+    url("./image/medoie.jpg") center/cover no-repeat;
+
+  width: 100%;
+  height: 100vh;
+}
+.heading-txt {
+  font-size: 1.3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.search-input-bar {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.search-input-bar input {
+  padding-inline: 10px;
+}
+
+.search-input-bar .search-icon {
+  position: absolute;
+  top: 7px;
+  left: 200px;
+}
+
+.search-input-bar input {
+  width: 410px;
+  height: 30px;
+  border-radius: 10px;
+  background: var(--search_bar_color);
+  border: none;
+  box-shadow: var(--input-field-box-shadow);
+  padding-left: 30px;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-bar-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-top: 55px;
+}
+
+.search-users {
+  width: 200px;
+  background-color: green;
+}
+
+/* intro text section */
+.intro-txt {
+  width: 450px;
+  height: 50px;
+  padding: 30px;
+  margin-top: 70px;
+}
+
+.intro-trust {
+  text-transform: uppercase;
+  color: goldenrod;
+  letter-spacing: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+}
+
+.intro-bold {
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+  span {
+    color: goldenrod;
+  }
+}
+
+.intro-lorem {
+  margin-top: 40px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.services-btn {
+  margin-top: 20px;
+  height: 50px;
+}
+
+.services-btn button {
+  text-align: center;
+  width: 150px;
+  height: 80%;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: goldenrod;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+}
+/* end of intro text section */
+.popular-search-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popular-txt {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  height: 70vh;
+}
+
+.what-we-do-txt {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.txt-first {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.txt-second {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.about-us {
+  margin-top: 20vh;
+  /* display: flex;
+  gap: 20px; */
+}
+
+.about-video {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.div {
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: var(--input-field-box-shadow);
+}
+
+.vid-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px 20px 0;
+}
+
+.p-txt {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.about-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.about-info {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-family: var(--font_family);
+  padding-right: 50px;
+}
+
+.about-smaller-info {
+  font-family: var(--font_family);
+  padding-right: 50px;
+}
+.search-list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.available {
+  margin-top: 30px;
+}
+.available-ul {
+  gap: 20px;
+  position: relative;
+}
+.available-list {
+  width: 30%;
+  height: 300px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.available-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.job-titles-list {
+  width: 18%;
+  background-color: white;
+  position: absolute;
+  top: 250px;
+  margin-left: 40px;
+  border-radius: 15px;
+  box-shadow: var(--input-field-box-shadow);
+  padding: 20px;
+
+  .job-titles {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: green;
+    margin-bottom: 5px;
+  }
+
+  .job-description {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .learn-more-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .learn-more {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+}
+
+.library-blogs {
+  margin-top: 50px;
+  padding-inline: 20px;
+}
+
+.library-blogs-title {
+  text-transform: uppercase;
+  color: green;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+.library-blogs-header {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 10px;
+  margin-bottom: 20px;
+  .lib-button {
+    display: flex;
+    gap: 20px;
+    height: 50px;
+    background-color: green;
+    padding: 15px;
+    margin-top: -10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .library-blogs-title-sub {
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(55, 54, 54);
+  }
+}
+
+.blogs-file {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  background-color: green;
+  border-radius: 10px;
+  box-shadow: var(--input-field-box-shadow);
+}
+
+.blog-post-prof {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.blogs-file-loop {
+  display: flex;
+
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.client-review {
+  background: linear-gradient(
+      to right,
+      rgba(8, 59, 16, 0.986),
+      rgba(12, 13, 12, 0.2)
+    ),
+    url("./image/consel.jpg") center/cover no-repeat;
+
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  padding: 50px 20px 20px 20px;
+
+  .review-left {
+    padding: 40px;
+    .review-title {
+      color: goldenrod;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .review-left-heading {
+      margin-top: 20px;
+      text-transform: capitalize;
+      color: white;
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    p {
+      color: rgb(238, 234, 234);
+      margin-top: 30px;
+    }
+
+    .review-btn {
+      color: white;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.6px;
+      display: flex;
+      justify-content: space-between;
+      width: 150px;
+      height: 40px;
+      padding: 10px;
+      margin-top: 50px;
+      border-radius: 6px;
+      cursor: pointer;
+      background-color: green;
+    }
+  }
+
+  .review-right {
+    margin-top: 70px;
+
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    .stars {
+      color: goldenrod;
+      display: flex;
+      gap: 10px;
+      padding-bottom: 20px;
+    }
+
+    .review-person {
+      padding-top: 50px;
+      display: flex;
+
+      .review-person-name {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+.review-right-container {
+  display: flex;
+  gap: 20px;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+/* end of homepage content */
+
+/* responsive mobile view */
+@media (max-width: 767px) {
+  .display {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 0 0 0 40%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: white;
+    font-size: 1.15rem;
+  }
+
+  .menu-list {
+    display: none;
+  }
+  .list-items {
+    flex-direction: column;
+  }
+
+  .toggle-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+
+  .profile {
+    margin-top: 10px;
+  }
+
+  .search-input-bar {
+    margin-inline: 20px;
+  }
+
+  .search-input-bar .search-icon {
+    position: absolute;
+    left: 3%;
+  }
+
+  .main-page-sub {
+    overflow-x: hidden;
+  }
+
+  .intro-txt {
+    width: 350px;
+  }
+
+  .what-we-do-txt {
+    width: 100%;
+    padding-inline: 20px;
+  }
+
+  .available-list {
+    width: 100%;
+    padding-inline: 20px;
+  }
+
+  .job-titles-list {
+    width: 60%;
+    background-color: white;
+    position: relative;
+    top: -70px;
+    margin-left: 60px;
+    padding: 20px;
+  }
+
+  .search-list {
+    gap: 25vh;
+  }
+
+  .about-video {
+    flex-direction: column;
+  }
+
+  .div {
+    width: 90%;
+  }
+
+  .p-txt {
+    width: 100%;
+  }
+}
+
+.library-blogs-title {
+  margin-bottom: 20px;
+}
+
+.blogs-file {
+  height: 350px;
+}
+
+.client-review {
+  flex-direction: column;
+}
+.review-left,
+.review-right {
+  width: 100%;
+}
+
+.review-right {
+  margin-inline: 0;
+}
+
+.review-right-container {
+  flex-direction: column;
+}
+/* end responsive mobile view */
+
+/* laptop responsive view */
+@media (min-width: 1024px) {
+  .search-input-bar .search-icon {
+    left: 440px;
+  }
+
+  .about-us {
+    margin-top: 30vh;
+  }
+
+  .library-blogs {
+    margin-top: 100px;
+  }
+
+  .client-review {
+    flex-direction: row;
+  }
+  .review-left {
+    width: 30%;
+  }
+
+  .review-right {
+    height: 320px;
+    margin-inline: 30px;
+  }
+
+  .review-right-container {
+    flex-direction: column;
+    width: 35%;
+    margin-left: 50px;
+  }
+}
+/* end of laptop responsive view */
+
+/* tab view */
+
+@media (min-width: 768px) {
+  .blogs-file {
+    width: 43%;
+    height: 450px;
+  }
+}
+
+/* end tab view */

@@ -1,0 +1,16 @@
+.chat-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #399918;
+}
+
+@media (max-width: 900px) {
+  .chatsidebar-hidden {
+    display: none;
+  }
+  .chat-sidebar {
+    width: 100%;
+  }
+}

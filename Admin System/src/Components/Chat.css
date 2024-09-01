@@ -1,0 +1,65 @@
+.chat {
+  display: flex;
+  width: 86%;
+  margin: 0 auto;
+  height: 89vh;
+  background-color: #f2f2f2;
+}
+
+.date-header {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #555;
+  font-size: 14px;
+}
+
+.document-fa-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.document-fa-div-singles label {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  width: 170px;
+  background-color: transparent;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.document-fa-div-singles input {
+  display: none;
+}
+
+.document-fa-div-singles {
+  display: flex;
+  gap: 10px;
+}
+
+.docs-implementation {
+  position: absolute;
+  right: 400px;
+  bottom: 100px;
+  display: flex;
+  gap: 10px;
+  background-color: var(--search_bar_color);
+}
+
+@media (max-width: 900px) {
+  .chat {
+    max-width: unset;
+    height: 100vh;
+  }
+
+  .docs-implementation {
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+  .docs-implementation label {
+    width: "100px";
+  }
+}

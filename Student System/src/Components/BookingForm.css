@@ -1,0 +1,25 @@
+/* .app-form-side {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+} */
+.book-form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.doctor-detials {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+.doctor-detials div {
+  width: 100%;
+  display: flex;
+}
+.professional-title {
+  font-weight: bold;
+}
